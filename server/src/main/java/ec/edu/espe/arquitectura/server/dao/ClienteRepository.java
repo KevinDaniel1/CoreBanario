@@ -9,7 +9,4 @@ import ec.edu.espe.arquitectura.server.model.Cliente;
 
 public interface ClienteRepository extends MongoRepository<Cliente,String>{
     
-    List<Cliente> findByNombre(String nombre);
-    List<Cliente> findByDireccionesCiudad(String ciudad);
-    Optional<Cliente> findByCedula(String cedula);
 }

@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import lombok.Builder;
 import lombok.Data;
 
-double
+@Data
 @Builder
 public class TransferenciaDTO {
 
@@ -14,8 +14,4 @@ public class TransferenciaDTO {
     private String cuentaDestino;
 
     private BigDecimal valor;
-
-    public double getValor() {
-        return 0;
-    }
 }
